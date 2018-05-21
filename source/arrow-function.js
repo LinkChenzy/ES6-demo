@@ -59,3 +59,19 @@
   console.log(
     new factory().c.b());
 }
+
+
+//不能用作构造函数
+let Animal = function() {
+
+}
+let animal = new Animal();
+
+let AnimalArrow = () => {}
+let animal2 = new AnimalArrow(); //AnimalArrow is not a constructor
+
+//没有prototype
+let commonFn = function() {};
+let arrowFn = () => {};
+console.log(commonFn.prototype); //{constructor: ƒ}
+console.log(arrowFn.prototype); //undefined
