@@ -6,7 +6,7 @@
 #### c. 去 index.js 去编写代码吧，浏览器会自动刷新，不要忘了打开Chrome浏览器调试面板看输出。（按F12即可）
 
 ### 教程
-* 常量 https://github.com/LinkChenzy/ES6-demo/blob/master/source/const.js
+* [常量] https://github.com/LinkChenzy/ES6-demo/blob/master/source/const.js
 * 作用域 https://github.com/LinkChenzy/ES6-demo/blob/master/source/scope.js
 * 箭头函数 https://github.com/LinkChenzy/ES6-demo/blob/master/source/arrow-function.js
 * 类、类继承 https://github.com/LinkChenzy/ES6-demo/blob/master/source/class.js
