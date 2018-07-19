@@ -17,12 +17,10 @@
 * [promise](https://github.com/LinkChenzy/ES6-demo/blob/master/source/promise.js)
 * [模块化输出引入](https://github.com/LinkChenzy/ES6-demo/blob/master/source/modules)  
 
+- **API**
 
-###API
-
-
-
- url | method  | format | params | required | type | instruction
+-**企业、游客注册**
+ > url | method  | format | params | required | type | instruction
 -- | :---- | :---- | :---- | :---- | :---- |:-------------
 /singup/custom | POST | JOSN | customName | ture | string | 公司名称
 企业用户、游客注册 |  |  | userName | ture | string | 联系人姓名
@@ -45,10 +43,8 @@
   | |  |  | fileUrl | ture | string | 营业执照图片
  | |  |  | userType | ture | int | 注册人的类型 1：企业 2：游客 3：科学家
 
-
-
-
- url | method  | format | params | required | type | instruction
+-**科学家注册**
+ > url | method  | format | params | required | type | instruction
 -- | :---- | :---- | :---- | :---- | :---- |:-------------
 /signup/scientist | POST | JOSN | userNameCN | ture | string | 科学家中文名称
 科学家用户注册 |  |  | userNameEN | ture | string | 科学家英文名称
@@ -66,48 +62,42 @@
  | |  |  | userType | ture | int | 注册人的类型 1：企业 2：游客 3：科学家
 
 
-###### 注册返回字段
-
-> |返回字段|字段类型|说明                              |
-|:-----   |:------|:-----------------------------   |
-|status   |int    |返回结果状态。0：注册正常；1：注册错误。   |
-
+- **注册返回字段**
+> |返回字段|字段类型|说明    
+|:-----   |:------|:-----------------------------   
+|status   |int    |返回结果状态。0：注册正常；1：注册错误。
 
 
-####请求注册信息
-
- url | method  | instruction 
+- **请求注册信息**
+ > url | method  | instruction 
 -- | :----: |:-------:
  signup/info | GET  | 企业和游客注册时的注册信息领域、合作方式请求
 
 
-
- params | required | type | instruction
+- **返回参数**
+ > params | required | type | instruction
 -- | :----: | :----: |:-------------:
- | ture | array | 公司所在领域
- | ture | array | 公司关注领域
-  | ture | array | 技术合作方式
+ member_domain| ture | array | 公司所在领域
+ domain | ture | array | 公司关注领域
+ member_coopway | ture | array | 技术合作方式
 
 
-####验证码
-
- url | method  | instruction 
+- **验证码**
+>  url | method  | instruction 
 -- | :----: |:-------:
  signup/info | GET  | 企业和游客注册时的注册信息领域、合作方式请求
 
 
-#####请求参数
-
- params | required | type | instruction
+- **参数**
+>  params | required | type | instruction
 -- | :----: | :----: |:-------------:
  email | ture | string |  邮箱
  phone | ture | string | 手机号
  type | ture | int | 1:注册 2：登录
 
 
-#####返回接收参数
-
- params | required | type | instruction
+- **返回请求参数**
+> params | required | type | instruction
 -- | :----: | :----: |:-------------:
  email_status | ture | int |  1:邮箱已经存在  0：邮箱未存在可以注册
  phone_status | ture | int |  1:手机已经存在  0：手机未存在可以注册
@@ -116,26 +106,23 @@
 
 
 
- ####登录
- 
- url | method  | instruction 
+- **登录**
+>  url | method  | instruction 
 -- | :----: |:-------:
  signin/user | GET  | 企业和游客注册时的注册信息领域、合作方式请求
 
 
-#####请求参数
-
- params | required | type | instruction
+- **参数**
+>  params | required | type | instruction
 -- | :----: | :----: |:-------------:
  email | ture | string |  邮箱/手机号
  password | ture | string | 密码
 
 
- #####返回接收参数
- 
- params | required | type | instruction
+- **返回接收参数**
+>  params | required | type | instruction
 -- | :----: | :----: |:-------------:
  sigin_status | ture | int |  1:失败  0：登录成功
  isFirst | ture | int |  1:是第一次登录  0：不是的一次登录
  user_type | ture | int | 1：企业 2：游客 3：科学家
- msg | ture | string | 登录状态
+ msg | ture | string | 登录状态描述
