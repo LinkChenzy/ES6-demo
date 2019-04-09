@@ -4,7 +4,6 @@
   "description": "环境搭建",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
     "build": "webpack"
@@ -32,7 +31,6 @@
     "ES6",
     "Webpack"
   ],
-  "author": "cuc_ygh@163.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LinkChenzy/ES6-demo/issues"

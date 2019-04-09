@@ -9,7 +9,7 @@ module.exports = {
     contentBase: './dist',
     hot: true,
     compress: true,
-    port: 9000,
+    port: 9009,
     clientLogLevel: "none",
     quiet: true
   },
