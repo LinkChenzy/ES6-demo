@@ -21,5 +21,5 @@ console.log([PI, window.PI2])
 console.log(foo);
 var foo = 1; //undefined 先执行var提前声明foo = undefined
 
-console.log(bar);
+console.log('bar',bar);
 let bar = 1; //报错：bar is not defined  顺序执行
